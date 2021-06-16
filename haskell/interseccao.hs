@@ -9,5 +9,5 @@
 
 intersect :: Eq a => [a] -> [a] -> [a]
 intersect [] _ = [] -- retorna lista vazia
-intersect (x:xs) ys | elem x ys = x : intersect xs ys
-                   | otherwise = intersect xs ys
+intersect (x:xs) ys | elem x ys = x : intersect xs ys -- se não estiver
+                   | otherwise = intersect xs ys -- se estiver
